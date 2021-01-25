@@ -22,13 +22,13 @@ p2 = 3
 function isOdd(p2){
 	if (p2%2 == 1){
 		return true
-		}
+	}
 	else if (p2%2 == -1){
 		return true
-		}	
+	}	
 	else {
 		return false
-		}
+	}
 }
 
 
@@ -39,10 +39,10 @@ p3 = 3
 function isEven(p3){
 	if (p3%2 == 0){
 		return true
-		}
+	}
 	else {
 		return false
-		}
+	}
 }
 
 
@@ -110,6 +110,26 @@ function lesser(l1,l2){
 // eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
+let name, language
+function multigreeting(name, language){
+	if (language == "en"){
+		return "Hello, "+ name + "!"
+	}
+	else if (language == "es"){
+		return "¡Hola, "+ name + "!"
+	}	
+		else if (language == "fr"){
+		return "Bonjour, "+ name + "!"
+	}	
+	else if (language == "eo"){
+		return "Saluton, "+ name + "!"
+	}	
+	else{
+		return 
+	}
+
+}
+
 
 // 11. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
 // is the largest integer that, given two other integers, can be divided into them. For
@@ -137,3 +157,33 @@ function lesser(l1,l2){
 
 // Write a function called gcd that takes two arguments and returns the greatest common
 // divisor using the instructions above.
+
+let a
+let b
+let g
+
+function gcd(a,b) {
+d=0
+
+	while((a%2==0 && b%2==0)) {
+		a = a/2
+		b = b/2
+		d = d + 1
+		}
+
+	while(a != b) {
+		if(a%2 == 0) {
+			a = a/2
+			}
+		else if(b%2 == 0) {
+			b = b/2
+			}
+		else if(a > b) {
+			a = (a-b)/2
+			}
+		else b = (b-a)/2
+		}
+	g = a
+	return (g * (2**d))
+}
+
