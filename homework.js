@@ -1,26 +1,72 @@
 // 1. Set the variable `givenName` to the string "Addison".
+givenName = "Addison"
 
 // 2. Set candies equal to 20, people to 6, and leftover equal
 // to the remainder of dividing 20 by 6.
+candies = 20
+people = 6
+leftover = (20%6)
 
 // 3. Create a function called greeting that returns "Hello, <name>!",
 // where <name> is the name given as an argument to the function.
+p1 = "Chase"
+function greeting(p1){
+return "Hello, " + p1 + "!"
+}
+
 
 // 4. Create a function called isOdd that, given a number, will
 // return true if it is odd and false if it is not. An odd number is a
 // number which, when divided by 2, has a remainder of 1 or -1.
+p2 = 3
+function isOdd(p2){
+	if (p2%2 == 1){
+		return true
+		}
+	else if (p2%2 == -1){
+		return true
+		}	
+	else {
+		return false
+		}
+}
+
 
 // 5. Create a function called isEven that, given a number, will
 // return true if it is even and false if it is not. An even number is a
 // number which, when divided by 2, has a remainder of 0.
+p3 = 3
+function isEven(p3){
+	if (p3%2 == 0){
+		return true
+		}
+	else {
+		return false
+		}
+}
+
 
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
+fahr1 = 0
+cels1 = 0
+function fahrenheitToCelsius(fahr1){
+	cels1 = (fahr1-32)*(5/9)
+	return cels1
+}
+
 
 // 7. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
+fahr2 = 0
+cels2 = 0
+function celsiusToFahrenheit(cels2){
+	fahr2 = (cels2*(9/5))+32
+	return fahr2
+}
+
 
 // 8. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
@@ -28,10 +74,30 @@
 // fahrenheitToCelsius function.
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
+fahr3 = 0
+cels3 = 0
+function fahrenheitToKelvin(fahr3){
+	cels3 = fahrenheitToCelsius(fahr3)
+	return cels3+273.15
+	
+}
 
 // 9. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
+let l1, l2
+function lesser(l1,l2){
+	if (l1 < l2){
+		return l1
+	}
+	else if (l1 > l2){
+		return l2
+	}
+	else {
+		return "cheeky"
+	}
+}
+
 
 // 10. Create a function called multigreeting that takes a name
 // and a language code and returns a version of "Hello, <name>!"
